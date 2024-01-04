@@ -20,8 +20,8 @@ export const Body = styled.main`
 
 export const Main = styled.section`
   display: flex;
-  width: 1200px;
-  height: 600px;
+  width: 1000px;
+  height: 500px;
   background-color: var(--escuro);
   margin: auto;
   border-radius: 2rem;
@@ -42,8 +42,8 @@ export const Box = styled(Main)`
 `
 
 export const IconTencologias = styled.img`
-width: 250px;
-height: 75px;
+width: 200px;
+height: 50px;
 `;
 
 export const Redes = styled.div`
