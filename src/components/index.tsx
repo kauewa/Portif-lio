@@ -1,6 +1,13 @@
 import styled from "styled-components";
 
 export const imgPerfil = require("../assets/perfil.png");
+export const imgGitHub = require("../assets/github.png");
+export const imgIn = require("../assets/in.png")
+export const imgTecnologias = require("../assets/tecnologias.png")
+export const imgCoding1 = require("../assets/coding1.png")
+export const imgCoding2 = require("../assets/coding2.png")
+export const imgCoding3 = require("../assets/coding3.png")
+export const imgWpp = require("../assets/wpp.png")
 
 export const Body = styled.main`
   width: 100%;
@@ -33,6 +40,31 @@ export const Box = styled(Main)`
   height: 200px;
   margin-top: 40px;
 `
+
+export const IconTencologias = styled.img`
+width: 250px;
+height: 75px;
+`;
+
+export const Redes = styled.div`
+position: fixed;
+display: flex;
+bottom: 0;
+right: 0;
+animation: aparecer 1s ease-in-out;
+`;
+
+export const Icon = styled.img`
+width: 50px;
+height: 50px;
+margin-right: 10px;
+transition: transform 0.1s ease-in-out;
+
+&:hover {
+  transform: scale(1.1);
+}
+
+`;
 
 export const Imagem = styled.img`
   width: 50%;
@@ -71,7 +103,7 @@ export const Botao = styled.a`
   align-items: center;
   color: #fff;
   width: 100%;
-  height: 50px;
+  height: 70px;
   border-radius: 1rem;
   margin-top: 5px;
   background-color: var(--vermelho);
@@ -91,18 +123,5 @@ export const Cursos = styled(Botao)`
   }
 `;
 
-export const Linkedin = styled(Botao)`
-  background-color: rgba(14, 118, 168, 0.4);
 
-  &:hover {
-    background-color: rgba(14, 118, 168, 1);
-  }
-`;
 
-export const Github = styled(Botao)`
-  background-color: rgba(0, 0, 0, 0.4);
-
-  &:hover {
-    background-color: rgba(0, 0, 0, 1);
-  }
-`;
