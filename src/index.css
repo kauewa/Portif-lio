@@ -4,17 +4,33 @@
   box-sizing: border-box;
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); 
+  }
+}
+
 :root {
-  --verde: #1afe49;
-  --fundo: #3d43b4;
-  --escuro: #041348;
-  --fundo-secundario: #8386f5;
-  --azul: #0e76a8;
-  --verde-forte: #083e12; 
-  --vermelho: #860029;
+  --verde: rgba(26, 254, 73, 1);
+  --verde-2: rgba(26, 254, 73, 0.5);
+--fundo: rgba(61, 67, 180, 1);
+--escuro: rgba(4, 19, 72, 0.4);
+--fundo-secundario: rgba(131, 134, 245, 0.4);
+--azul: rgba(14, 118, 168, 0.4);
+--verde-forte: rgba(8, 62, 18, 0.4);
+--vermelho: rgba(134, 0, 41, 0.5);
+--vermelho-2: rgba(134, 0, 41, 1);
+
   --fonte-principal: 'Kdam Thmor Pro', sans-serif;
   
   font-family: var(--fonte-principal);
+
+  
 }
 
 body{
